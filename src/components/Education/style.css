@@ -1,0 +1,12 @@
+.titleEducation{
+    color: #343a40
+}
+
+.subtitleEducation{
+    color: #868e96;
+    text-transform: uppercase;
+}
+
+.locationEducation{
+    float: right;
+}

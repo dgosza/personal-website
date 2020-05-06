@@ -1,0 +1,45 @@
+.menuLeftSide{
+    background-color: rgb(31, 31, 199);
+    height: 100vh; /*full height*/
+    /* border-right: 2px solid green; */
+}
+
+.contentMenu{
+    margin-top: 20vh;
+}
+
+.pageComponent{
+    background-color: #F3F3F3;
+}
+
+.contentPages{
+    margin-left: 50px;
+}
+
+.myPhoto{
+    border-radius: 100%;
+    border: 8px solid rgb(26, 26, 161);
+}
+
+ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+ul li .listAboutMe{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-right: 40px;
+    
+    transition: 0.5s ease-out;
+}
+
+ul li .listAboutMe:hover{
+    font-weight: 500;
+    opacity: initial;
+    
+}
