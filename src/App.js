@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 //CSS
 import './App.css'
@@ -21,9 +21,24 @@ import Customers from './components/Customers'
 
 const App = () => {
 
-    const [renderContent, setRenderContent] = useState(<Experience />)
+    const [renderContent, setRenderContent] = useState(<Skills />)
+    const [linkAnterior, setLinkAnterior] = useState()
 
-    const changeContent = (page) => {
+    const itemAbout = useRef(null)
+    const itemEducation = useRef(null)
+    const itemExperience = useRef(null)
+    const itemSkills = useRef(null)
+    const itemProjects = useRef(null)
+    const itemCustomers = useRef(null)
+
+    const changeContent = (page, ref) => {
+
+        if(linkAnterior !== undefined){
+            linkAnterior.current.className = 'listAboutMe'
+        }
+
+        ref.current.className = 'listAboutMe active'
+        setLinkAnterior(ref)
         setRenderContent(page)
     }
 
@@ -35,12 +50,12 @@ const App = () => {
                     <img src={MyPhoto} width="150" className="myPhoto" alt="Diego Souza"></img>
                     <p><span role="img" aria-label="Emoji">👨🏽‍💻</span></p>
                     <ul>
-                        <li> <a href="#!" className="listAboutMe" onClick={() => { changeContent(<About />) }}>About me</a>     </li>
-                        <li> <a href="#!" className="listAboutMe" onClick={() => { changeContent(<Education />) }}>Education</a>    </li>
-                        <li> <a href="#!" className="listAboutMe" onClick={() => { changeContent(<Experience />) }}>Experience</a>   </li>
-                        <li> <a href="#!" className="listAboutMe" onClick={() => { changeContent(<Skills />) }}>Skills</a>       </li>
-                        <li> <a href="#!" className="listAboutMe" onClick={() => { changeContent(<Projects />) }}>Projects</a>     </li>
-                        <li> <a href="#!" className="listAboutMe" onClick={() => { changeContent(<Customers />) }}>Customers</a>    </li>
+                        <li> <a href="#!" className="listAboutMe" ref={itemAbout} onClick={() => { changeContent(<About />, itemAbout) }}>About me</a>     </li>
+                        <li> <a href="#!" className="listAboutMe" ref={itemEducation} onClick={() => { changeContent(<Education />, itemEducation) }}>Education</a>    </li>
+                        <li> <a href="#!" className="listAboutMe" ref={itemExperience} onClick={() => { changeContent(<Experience />, itemExperience) }}>Experience</a>   </li>
+                        <li> <a href="#!" className="listAboutMe" ref={itemSkills} onClick={() => { changeContent(<Skills />, itemSkills) }}>Skills</a>       </li>
+                        <li> <a href="#!" className="listAboutMe" ref={itemProjects} onClick={() => { changeContent(<Projects />, itemProjects) }}>Projects</a>     </li>
+                        <li> <a href="#!" className="listAboutMe" ref={itemCustomers} onClick={() => { changeContent(<Customers />, itemCustomers) }}>Customers</a>    </li>
                     </ul>
                 </div>
 

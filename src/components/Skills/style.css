@@ -1,0 +1,19 @@
+.titleSkills{
+    color: #868e96;
+    text-transform: uppercase;
+}
+
+#htmlIcon{color: #e44f26;} 
+#cssIcon{color: #0277bd}
+#javascriptIcon{color: #f7df1e}
+#materializeIcon{color: #eb7077}
+#reactjsIcon{color: #61dafb }
+#nodejsIcon{color: #8cc84b}
+#mongoDBIcon{color: #1f8834}
+#npmIcon{color: #d40001}
+#jiraIcon{color: #172b4d}
+#gitIcon{color: #df4c37}
+#githubIcon{color: #323131}
+#windowIcon{color: #2376bc}
+#visualIcon{color: #0179cb}
+#herokuIcon{color: #440099}

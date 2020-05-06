@@ -41,5 +41,9 @@ ul li .listAboutMe{
 ul li .listAboutMe:hover{
     font-weight: 500;
     opacity: initial;
-    
+}
+
+ul li .listAboutMe.active{
+    font-weight: 500;
+    opacity: initial;
 }

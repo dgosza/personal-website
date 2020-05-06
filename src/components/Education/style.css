@@ -5,8 +5,16 @@
 .subtitleEducation{
     color: #868e96;
     text-transform: uppercase;
+
 }
 
 .locationEducation{
     float: right;
+    color: #343a40;
+
 }
+
+.dateEducation{
+    color: #868e96;
+}
+
