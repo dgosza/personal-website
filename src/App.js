@@ -8,6 +8,7 @@ import 'typeface-roboto';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Tooltip from '@material-ui/core/Tooltip';
+import Hidden from '@material-ui/core/Hidden';
 
 //My picture
 import MyPhoto from './assets/images/me.jpg'
@@ -52,25 +53,35 @@ const App = () => {
         <Grid container spacing={0}>
             <Grid item lg={3} xs={3} sm={3} className="menuLeftSide" align="center">
 
-                <div className="contentMenu">
-                    <img src={MyPhoto} width="150" className="myPhoto" alt="Diego Souza"></img>
-                    <p><span role="img" aria-label="Emoji">👨🏽‍💻</span></p>
-                    <ul>
-                        <li> <a href="#!" className="listAboutMe" ref={itemAbout} onClick={() => { changeContent(<About />, itemAbout) }}>About me</a>     </li>
-                        <li> <a href="#!" className="listAboutMe" ref={itemEducation} onClick={() => { changeContent(<Education />, itemEducation) }}>Education</a>    </li>
-                        <li> <a href="#!" className="listAboutMe" ref={itemExperience} onClick={() => { changeContent(<Experience />, itemExperience) }}>Experience</a>   </li>
-                        <li> <a href="#!" className="listAboutMe" ref={itemSkills} onClick={() => { changeContent(<Skills />, itemSkills) }}>Skills</a>       </li>
-                        <li> <a href="#!" className="listAboutMe" ref={itemProjects} onClick={() => { changeContent(<Projects />, itemProjects) }}>Projects</a>     </li>
-                        <li> <a href="#!" className="listAboutMe" ref={itemCustomers} onClick={() => { changeContent(<Customers />, itemCustomers) }}>Customers</a>    </li>
-                    </ul>
-                </div>
+                    <div className="contentMenu">
+                        <Hidden xsDown><img src={MyPhoto} width="150" className="myPhoto" alt="Diego Souza"></img></Hidden>
+                        <p><span role="img" aria-label="Emoji">👨🏽‍💻</span></p>
+                        <Hidden xsDown>
+                        <ul>
+                            <li> <a href="#!" className="listAboutMe" ref={itemAbout} onClick={() => { changeContent(<About />, itemAbout) }}>About me</a>     </li>
+                            <li> <a href="#!" className="listAboutMe" ref={itemEducation} onClick={() => { changeContent(<Education />, itemEducation) }}>Education</a>    </li>
+                            <li> <a href="#!" className="listAboutMe" ref={itemExperience} onClick={() => { changeContent(<Experience />, itemExperience) }}>Experience</a>   </li>
+                            <li> <a href="#!" className="listAboutMe" ref={itemSkills} onClick={() => { changeContent(<Skills />, itemSkills) }}>Skills</a>       </li>
+                            <li> <a href="#!" className="listAboutMe" ref={itemProjects} onClick={() => { changeContent(<Projects />, itemProjects) }}>Projects</a>     </li>
+                            <li> <a href="#!" className="listAboutMe" ref={itemCustomers} onClick={() => { changeContent(<Customers />, itemCustomers) }}>Customers</a>    </li>
+                        </ul>
+                        </Hidden>
+                    </div>
+
+                    <Hidden smUp>
+                        <a href="#!" className="listAboutMe" ref={itemAbout} onClick={() => { changeContent(<About />, itemAbout) }}>About me</a><br/>
+                        <a href="#!" className="listAboutMe" ref={itemEducation} onClick={() => { changeContent(<Education />, itemEducation) }}>Education</a>  <br/>
+                        <a href="#!" className="listAboutMe" ref={itemExperience} onClick={() => { changeContent(<Experience />, itemExperience) }}>Experience</a> <br/>
+                        <a href="#!" className="listAboutMe" ref={itemSkills} onClick={() => { changeContent(<Skills />, itemSkills) }}>Skills</a>     <br/>
+                        <a href="#!" className="listAboutMe" ref={itemProjects} onClick={() => { changeContent(<Projects />, itemProjects) }}>Projects</a>     <br/>
+                        <a href="#!" className="listAboutMe" ref={itemCustomers} onClick={() => { changeContent(<Customers />, itemCustomers) }}>Customers</a>   <br/>
+                    </Hidden>
 
                 <ul className="socialMedia">
-                    <Tooltip title="Instagram"><li><a href="https://www.instagram.com/dieezs/" target="_blank" rel="noopener noreferrer"><Instagram size={30}/></a></li></Tooltip>
-                    <Tooltip title="Linkedin"><li><a href="https://www.linkedin.com/in/diegozs/" target="_blank" rel="noopener noreferrer"><Linkedin size={30}/></a></li></Tooltip>
-                    <Tooltip title="Github"><li><a href="https://github.com/dieezs" target="_blank" rel="noopener noreferrer"><Github size={30}/></a></li></Tooltip>
+                    <Tooltip title="Instagram"><li><a href="https://www.instagram.com/dieezs/" target="_blank" rel="noopener noreferrer"><Instagram size={30} /></a></li></Tooltip>
+                    <Tooltip title="Linkedin"><li><a href="https://www.linkedin.com/in/diegozs/" target="_blank" rel="noopener noreferrer"><Linkedin size={30} /></a></li></Tooltip>
+                    <Tooltip title="Github"><li><a href="https://github.com/dieezs" target="_blank" rel="noopener noreferrer"><Github size={30} /></a></li></Tooltip>
                 </ul>
-
             </Grid>
 
 

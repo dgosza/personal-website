@@ -61,3 +61,14 @@ ul.socialMedia li a{
 ul.socialMedia li a:hover{
    color: #F3F3F3
 }
+
+.listAboutMe{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-family: 'Roboto Condensed', sans-serif;
+   
+    
+    transition: 0.5s ease-out;
+}
