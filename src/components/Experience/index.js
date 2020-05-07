@@ -22,21 +22,21 @@ const Experience = () => {
 
             <Typography variant="h6" className="titleEducation">Junior Analyst</Typography>
             <span className="subtitleEducation">it commerce</span><br />
-            <p>
+            <>
                 <span className="customerExperience">Customer: Arcos Dorados</span><br />
                 <Typography variant="body2">Project: Enterprise Architecture</Typography>
                 <Typography variant="body2" className="textExperience">drawing low and high level of integrations between systems at Arcos Dorados SLAD/NOLAD, responsible for managing the view at portal 
                 web for collaborators, detailing of applications(which servers are installed, which business area utilize that application, who's responsible, programming language, etc.) and experience with tool of Enterprise Architecture named Qualiware
                 </Typography>
                 <span className="durationExperience"><WiTime2 className="iconExperience" />Duration: current</span><br />
-            </p>
-            <p>
+            </>
+            <>
                 <span className="customerExperience">Customer: Prevent Senior</span><br />
                 <Typography variant="body2">Project: Support</Typography>
                 <Typography variant="body2" className="textExperience">Support the users and solve their problem calls on Jira Servicedesk. Creation, validation, and management of users in portal web Prevent Senior, 
                 software installation by demand, validation of software licenses,technical support by presencial or call, managing stock, formating machines sent to support and optimizing then</Typography>
                 <span className="durationExperience"><WiTime2 className="iconExperience" />Duration: 11 months</span><br />
-            </p>
+            </>
 
 
             <br />
