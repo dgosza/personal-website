@@ -21,7 +21,7 @@ import Customers from './components/Customers'
 
 const App = () => {
 
-    const [renderContent, setRenderContent] = useState(<Skills />)
+    const [renderContent, setRenderContent] = useState(<Customers />)
     const [linkAnterior, setLinkAnterior] = useState()
 
     const itemAbout = useRef(null)
