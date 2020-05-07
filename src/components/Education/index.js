@@ -10,8 +10,6 @@ import Aux from '../hoc/'
 //Material UI
 import Typography from '@material-ui/core/Typography'
 
-import { GrLocationPin } from 'react-icons/gr'
-
 const Education = () => {
     return (
 
@@ -20,23 +18,20 @@ const Education = () => {
             <Title>Education</Title>
             
             <Typography variant="h6" className="titleEducation">Software Engineering</Typography>
-            <p className="locationEducation"> <GrLocationPin/>Faculdade Impacta</p>
             <span className="subtitleEducation">Postgraduate</span><br/>
-            <span className="dateEducation">June 2019 - December 2020</span>
+            <span className="dateEducation">June 2019 - December 2020 | Faculdade Impacta</span>
 
             <br/><br/><br/>
 
             <Typography variant="h6" className="titleEducation">Analysis and Systems Development</Typography>
-            <p className="locationEducation"> <GrLocationPin></GrLocationPin>Faculdade Drummond</p>
             <span className="subtitleEducation">bachelor of technology</span><br/>
-            <span className="dateEducation">January 2017 - June 2019</span>
+            <span className="dateEducation">January 2017 - June 2019 | Faculdade Drummond</span>
 
             <br/><br/><br/>
 
             <Typography variant="h6" className="titleEducation">Internet Computing</Typography>
-            <p className="locationEducation"> <GrLocationPin></GrLocationPin>Etec Parque Belém - Centro Paula Souza</p>
             <span className="subtitleEducation">technician</span><br/>
-            <span className="dateEducation">June 2015 - January 2017</span>
+            <span className="dateEducation">June 2015 - January 2017 | ETEC Parque Belém - Centro Paula Souza</span>
 
         </Aux>
 

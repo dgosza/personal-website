@@ -1,16 +1,9 @@
 .customerExperience{
     font-size:16px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.durationExperience{
-    float:right
-}
 .textExperience{
     width: 70%;
     text-align: justify;
-}
-.iconExperience{
-    position:relative;
-    top:3px
 }

@@ -47,3 +47,17 @@ ul li .listAboutMe.active{
     font-weight: 500;
     opacity: initial;
 }
+
+ul.socialMedia li{
+    display: inline-block;
+    position: relative;
+    left:-15px;
+}
+
+ul.socialMedia li a{
+    color: #fff;
+}
+
+ul.socialMedia li a:hover{
+   color: #F3F3F3
+}
